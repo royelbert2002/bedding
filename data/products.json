@@ -1,0 +1,68 @@
+[
+  {
+    "name": "CloudSoft Upholstered Bed",
+    "type": "Upholstered",
+    "size": "Queen",
+    "price": 699,
+    "rating": 4.9,
+    "material": "Soft fabric and timber frame",
+    "storage": "No",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+    "description": "A soft upholstered bed designed for modern bedrooms with a plush headboard and calm neutral finish."
+  },
+  {
+    "name": "Oak Haven Timber Bed",
+    "type": "Wooden",
+    "size": "King",
+    "price": 849,
+    "rating": 4.8,
+    "material": "Oak finish timber",
+    "storage": "No",
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80",
+    "description": "A strong timber bed frame with a warm oak look for customers who want a clean and natural bedroom style."
+  },
+  {
+    "name": "Urban Lift Storage Bed",
+    "type": "Storage",
+    "size": "Queen",
+    "price": 949,
+    "rating": 4.7,
+    "material": "Fabric and lift-up storage base",
+    "storage": "Yes",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+    "description": "A smart bed frame with hidden storage that helps save space while still looking premium and elegant."
+  },
+  {
+    "name": "Nordic Calm Platform Bed",
+    "type": "Platform",
+    "size": "Double",
+    "price": 759,
+    "rating": 4.8,
+    "material": "Low-profile timber design",
+    "storage": "No",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80",
+    "description": "A minimal platform bed that suits modern apartments and smaller bedrooms with a simple Scandinavian feel."
+  },
+  {
+    "name": "Velvet Dream Queen Bed",
+    "type": "Upholstered",
+    "size": "Queen",
+    "price": 899,
+    "rating": 4.9,
+    "material": "Velvet upholstery with padded headboard",
+    "storage": "No",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+    "description": "A statement bed frame with a rich velvet finish and tall headboard for a more luxurious bedroom look."
+  },
+  {
+    "name": "SpaceSaver Drawer Bed",
+    "type": "Storage",
+    "size": "King",
+    "price": 999,
+    "rating": 4.6,
+    "material": "Timber frame with drawer storage",
+    "storage": "Yes",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+    "description": "A large bed with built-in storage drawers for customers who need both comfort and practical organization."
+  }
+]
