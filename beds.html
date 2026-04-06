@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamNest Beds</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">DreamNest Beds</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="beds.html">Beds</a>
+        <a href="mattresses.html">Mattresses</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Bed collection</h2>
+        <p>Filter by bed type, size, or search by name to find the right frame for your bedroom.</p>
+      </div>
+
+      <div class="filters-wrap">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search bed name..." />
+        </div>
+        <div class="filter-row" id="typeFilters"></div>
+        <div class="size-row" id="sizeFilters"></div>
+      </div>
+
+      <div class="catalog-layout">
+        <div class="product-grid" id="productGrid"></div>
+
+        <div class="summary-card">
+          <h3>Shopping Summary</h3>
+          <div class="summary-line"><span>Products in cart</span><strong id="summaryItems">0</strong></div>
+          <div class="summary-line"><span>Estimated shipping</span><strong id="summaryShipping">$0</strong></div>
+          <div class="summary-line"><span>Current subtotal</span><strong id="summarySubtotal">$0.00</strong></div>
+          <div class="summary-divider"></div>
+          <p class="summary-text">Use the filters to narrow the collection, then view details or add directly to cart.</p>
+          <button class="btn primary full-btn" id="checkoutBtn">Go to Checkout</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© 2026 DreamNest Beds. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Privacy</a>
+        <a href="index.html">Terms</a>
+        <a href="contact.html">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-backdrop" id="cartBackdrop"></div>
+    <aside class="drawer-panel">
+      <div class="drawer-header">
+        <h2>Your Cart</h2>
+        <button class="icon-btn" id="closeCart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="drawer-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong>$<span id="cartTotal">0.00</span></strong>
+        </div>
+        <button class="btn primary full-btn" id="cartCheckoutBtn">Checkout</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="modal-overlay" id="detailModalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Product Details</h3>
+        <button class="icon-btn" id="closeDetailModal">×</button>
+      </div>
+      <div class="detail-body" id="detailBody"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="checkoutModalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Checkout</h3>
+        <button class="icon-btn" id="closeCheckoutModal">×</button>
+      </div>
+      <div class="checkout-layout">
+        <div class="checkout-form">
+          <h3>Delivery Details</h3>
+          <input type="text" placeholder="Full name" />
+          <input type="email" placeholder="Email address" />
+          <input type="text" placeholder="Street address" />
+          <input type="text" placeholder="City" />
+          <select>
+            <option>Standard Delivery</option>
+            <option>Express Delivery</option>
+            <option>Assembly Service</option>
+          </select>
+          <button class="btn primary" id="placeOrderBtn">Place Order</button>
+        </div>
+        <div class="checkout-box">
+          <h3>Order Summary</h3>
+          <div id="checkoutSummary"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

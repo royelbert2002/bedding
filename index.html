@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamNest Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">DreamNest Beds</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="beds.html">Beds</a>
+        <a href="mattresses.html">Mattresses</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">Furniture Brand Demo</span>
+        <h1>Luxury beds and mattresses for a calm, modern bedroom.</h1>
+        <p>
+          Shop premium bed frames, compare sizes, explore mattress options, view product details, and complete a simple checkout flow in one polished store layout.
+        </p>
+        <div class="hero-actions">
+          <a href="beds.html" class="btn primary">Shop Beds</a>
+          <a href="mattresses.html" class="btn secondary">Shop Mattresses</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80" alt="Luxury bed" />
+        <div class="floating-box">
+          <p>Best Seller</p>
+          <strong>Free delivery on selected queen and king bed frames</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section layer-section">
+    <div class="container layer-grid">
+      <div class="layer-copy">
+        <div class="section-title">
+          <h2>Layer your sleep system as you scroll</h2>
+          <p>Reveal the bed construction one layer at a time: from mattress pad to duvet and pillows.</p>
+        </div>
+      </div>
+      <div class="layer-frame">
+        <div class="layer-stack">
+          <div class="layer-card layer-card--base" data-layer="1">Bed skirt</div>
+          <div class="layer-card layer-card--pad" data-layer="2">Mattress pad</div>
+          <div class="layer-card layer-card--protector" data-layer="3">Mattress protector</div>
+          <div class="layer-card layer-card--fitted" data-layer="4">Fitted sheet</div>
+          <div class="layer-card layer-card--flat" data-layer="5">Flat sheet</div>
+          <div class="layer-card layer-card--duvet" data-layer="6">Duvet</div>
+          <div class="layer-card layer-card--blanket" data-layer="7">Throw blanket</div>
+          <div class="layer-card layer-card--pillows" data-layer="8">Pillows</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why customers choose DreamNest</h2>
+        <p>A more realistic furniture brand layout with useful shopping features.</p>
+      </div>
+      <div class="features">
+        <div class="feature-card"><h3>Bed Size Filter</h3><p>Let customers browse single, double, queen, and king options faster.</p></div>
+        <div class="feature-card"><h3>Product Detail View</h3><p>See images, materials, sizes, and key features before adding to cart.</p></div>
+        <div class="feature-card"><h3>Mattress Section</h3><p>Cross-sell matching sleep products to increase average order value.</p></div>
+        <div class="feature-card"><h3>Checkout Modal</h3><p>Give users a simple checkout experience with an order summary.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="offer-box">
+        <div class="offer-content">
+          <p class="offer-label">Bedroom upgrade</p>
+          <h2>Create a warm, elegant sleep space that feels premium.</h2>
+          <p>
+            This upgraded demo is designed to feel closer to a real furniture brand website, with clearer product browsing and stronger purchase flow.
+          </p>
+          <a href="beds.html" class="btn primary">Explore Collection</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80" alt="Bedroom interior" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="newsletter-box">
+        <div>
+          <h2>Get special offers</h2>
+          <p>Join our mailing list for bedroom inspiration, new arrivals, and seasonal sales.</p>
+        </div>
+        <div class="newsletter-inline">
+          <input type="email" placeholder="Enter your email" />
+          <button class="btn primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© 2026 DreamNest Beds. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Privacy</a>
+        <a href="index.html">Terms</a>
+        <a href="contact.html">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-backdrop" id="cartBackdrop"></div>
+    <aside class="drawer-panel">
+      <div class="drawer-header">
+        <h2>Your Cart</h2>
+        <button class="icon-btn" id="closeCart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="drawer-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong>$<span id="cartTotal">0.00</span></strong>
+        </div>
+        <button class="btn primary full-btn" id="cartCheckoutBtn">Checkout</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="modal-overlay" id="detailModalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Product Details</h3>
+        <button class="icon-btn" id="closeDetailModal">×</button>
+      </div>
+      <div class="detail-body" id="detailBody"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="checkoutModalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Checkout</h3>
+        <button class="icon-btn" id="closeCheckoutModal">×</button>
+      </div>
+      <div class="checkout-layout">
+        <div class="checkout-form">
+          <h3>Delivery Details</h3>
+          <input type="text" placeholder="Full name" />
+          <input type="email" placeholder="Email address" />
+          <input type="text" placeholder="Street address" />
+          <input type="text" placeholder="City" />
+          <select>
+            <option>Standard Delivery</option>
+            <option>Express Delivery</option>
+            <option>Assembly Service</option>
+          </select>
+          <button class="btn primary" id="placeOrderBtn">Place Order</button>
+        </div>
+        <div class="checkout-box">
+          <h3>Order Summary</h3>
+          <div id="checkoutSummary"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
